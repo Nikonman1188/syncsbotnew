@@ -9,7 +9,7 @@
 
 <h2>Contact Us</h2>
 
-<form id="contact-form" action="https://discord.com/api/webhooks/1243297344469078120/tZ8Dfq0KSfV-NV4rxrEwQjp8WNFnL6-8ounsZ6U-q3PAJkBOTi_EycfaFNQ59mdPpLUQ" method="POST">
+<form id="contact-form" action="https://discord.com/api/webhooks/1243297344469078120/tZ8Dfq0KSfV-NV4rxrEwQjp8WNFnL6-8ounsZ6U-q3PAJkBOTi_EycfaFNQ59mdPpLUQ" method="POST" onsubmit="return validateForm()">
     <label for="name">Your Name:</label><br>
     <input type="text" id="name" name="name" required><br>
     <label for="email">Your Email:</label><br>
@@ -20,8 +20,16 @@
 </form>
 
 <script>
-    // Optionally, you can add JavaScript here to handle form validation or other tasks.
+    function validateForm() {
+        var message = document.getElementById("message").value;
+        if (message.trim() === "") {
+            alert("Please enter a message.");
+            return false;
+        }
+        return true;
+    }
 </script>
 
 </body>
 </html>
+
