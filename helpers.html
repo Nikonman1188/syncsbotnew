@@ -177,6 +177,25 @@
         .staff-info p {
             margin: 5px 0;
         }
+
+        .back-home {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: var(--main-hover-color);
+        }
     </style>
 </head>
 <body>
@@ -185,7 +204,7 @@
 
         <!-- Staff Member 1 -->
         <div class="staff-member">
-            <img src="DiscordPic.png" alt="Staff Member 1">
+            <img src="nikonman.png" alt="Staff Member 1">
             <div class="staff-info">
                 <h2>Nikonman118</h2>
                 <p>Position: Owner</p>
@@ -213,10 +232,9 @@
             </div>
         </div>
 
-        
          <!-- Staff Member 4 -->
          <div class="staff-member">
-            <img src="TLG.png" alt="Staff Member 4">
+            <img src="The Lighting Guy.png" alt="Staff Member 4">
             <div class="staff-info">
                 <h2>“The Lighting Guy”</h2>
                 <p>Position: Head Developer</p>
@@ -224,17 +242,18 @@
             </div>
         </div>
 
-            <!-- Staff Member 4 -->
-            <div class="staff-member">
-                <img src="kenny.png" alt="Staff Member 4">
-                <div class="staff-info">
-                    <h2>Kenny</h2>
-                    <p>Position: Support</p>
-                    <p>Kenny is our head support because he was here from the start and has been a great support member! </p>
-                </div>
+         <!-- Staff Member 5 -->
+         <div class="staff-member">
+            <img src="kenny.png" alt="Staff Member 4">
+            <div class="staff-info">
+                <h2>Kenny</h2>
+                <p>Position: Support</p>
+                <p>Kenny is our head support because he was here from the start and has been a great support member!</p>
             </div>
+        </div>
 
-
+        <!-- Back Home Button -->
+        <button class="back-home" onclick="window.location.href='index.html'">Back Home</button>
     </div>
 </body>
 </html>
