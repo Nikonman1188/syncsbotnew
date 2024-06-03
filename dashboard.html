@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --main-color: rgb(255, 81, 0);
+            --main-hover-color: rgb(255, 119, 56);
+            --second-color: #1a1a1a;
+            --third-color: #2c2c2c;
+            --nav-text-color: #98999b;
+            --nav-text-hover-color: #fffce4;
+            --heading-color: #fffce4;
+            --small-text-color: #c7c7c7;
+            --very-small-text-color: #999999;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            text-align: center;
+            background: var(--second-color);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 6em;
+            margin: 0;
+            color: var(--main-color);
+        }
+
+        p {
+            font-size: 1.5em;
+            color: var(--small-text-color);
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: var(--main-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: var(--main-hover-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! Looks like the dashbaord is not ready yet!</p>
+        <a href="/" class="home-link">Go to Homepage</a>
+    </div>
+</body>
+</html>
