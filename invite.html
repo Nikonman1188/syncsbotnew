@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Check if the current URL ends with 'invite.html'
-        if (window.location.pathname.endsWith('/invite.html')) {
-            // Redirect to the URL without the .html extension
-            window.location.href = window.location.origin + '/invite';
-        } else {
-            // Otherwise, redirect to the intended URL
-            window.location.href = "https://docs.anchorbot.xyz/bulletin/commands";
-        }
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the current URL ends with 'invite.html'
+            if (window.location.pathname === '/invite.html') {
+                // Redirect to the new URL
+                window.location.href = 'https://docs.anchorbot.xyz/bulletin/commands';
+            } else {
+                // Otherwise, redirect to the fallback URL
+                window.location.href = 'https://discord.com/syncs';
+            }
+        });
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://docs.anchorbot.xyz/bulletin/commands">link to Discord</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="https://docs.anchorbot.xyz/bulletin/commands">link to the commands page</a>.</p>
 </body>
 </html>
