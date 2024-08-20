@@ -1,10 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        window.location.href = "https://discord.com/syncs";
+        // Check if the current URL ends with 'invite.html'
+        if (window.location.pathname.endsWith('/invite.html')) {
+            // Redirect to the URL without the .html extension
+            window.location.href = window.location.origin + '/invite';
+        } else {
+            // Otherwise, redirect to the intended URL
+            window.location.href = "https://discord.com/syncs";
+        }
     </script>
 </head>
 <body>
