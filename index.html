@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Domain for Sale</title>
+    <title>Hmmm? Still being worked on.</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
     <style>
+        :root {
+            --bg-color: #121212;
+            --main-color: rgb(255, 81, 0);
+            --main-hover-color: rgb(255, 119, 56);
+            --second-color: #1a1a1a;
+            --third-color: #2c2c2c;
+            --nav-text-color: #98999b;
+            --nav-text-hover-color: #fffce4;
+            --heading-color: #fffce4;
+            --small-text-color: #c7c7c7;
+            --very-small-text-color: #999999;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text */
+            height: 100vh;
+            background-color: var(--bg-color);
         }
 
         .container {
             text-align: center;
-            background-color: #000; /* Black background for the container */
-            padding: 30px;
+            background: var(--second-color);
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* White shadow */
-            color: #fff; /* White text inside the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            font-size: 2.5rem;
-            color: #ff4500; /* Orange */
+            font-size: 6em;
+            margin: 0;
+            color: var(--main-color);
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.5em;
+            color: var(--small-text-color);
+        }
+
+        .home-link {
+            display: inline-block;
             margin-top: 20px;
-        }
-
-        a {
-            color: #ff4500; /* Orange link */
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: var(--main-color);
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .home-link:hover {
+            background-color: var(--main-hover-color);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>This Domain is Up for Sale</h1>
-        <p>If you're interested, contact us at <a href="mailto:contact@domain.com">contact@domain.com</a></p>
+        <h1>Under development.</h1>
+        <p>Oops! Come back soon! As this page is still being worked on at the moment!</p>
     </div>
 </body>
 </html>
